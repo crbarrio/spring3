@@ -1,5 +1,23 @@
 # Sprint 3 IT Academy | Video management tool
 
+## Solución (entrega)
+
+- Repositorio: https://github.com/crbarrio/spring3
+- Live demo: https://it-springs.crbarrio.es/assets/demos/spring3/
+
+## Resolución de ejercicios
+
+La lógica solicitada se implementa en `src/films.js` usando métodos ES6 (map/filter/reduce/sort) y procurando no mutar el array original.
+
+1. **getAllDirectors**: obtiene un listado de directores a partir del array de películas.
+2. **getMoviesFromDirector**: filtra las películas de un director concreto.
+3. **moviesAverageOfDirector**: calcula la media de puntuación de un director (con 2 decimales).
+4. **orderAlphabetically**: ordena por título y devuelve los 20 primeros (solo los títulos).
+5. **orderByYear**: ordena por año ascendente y, en caso de empate, por título.
+6. **moviesAverageByCategory**: calcula la media de puntuación por género/categoría (con 2 decimales).
+7. **hoursToMinutes**: convierte la duración de formato string (e.g. `2h 34min`) a minutos (number) en un nuevo array.
+8. **bestFilmOfYear**: devuelve la(s) película(s) con mejor puntuación de un año dado.
+
 ## Introduction
 
 A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
