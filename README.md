@@ -9,6 +9,8 @@
 
 La lógica solicitada se implementa en `src/films.js` usando métodos ES6 (map/filter/reduce/sort) y procurando no mutar el array original.
 
+Además, para el **ejercicio 6** se han definido los tests correspondientes en `tests/films.spec.js`.
+
 1. **getAllDirectors**: obtiene un listado de directores a partir del array de películas.
 2. **getMoviesFromDirector**: filtra las películas de un director concreto.
 3. **moviesAverageOfDirector**: calcula la media de puntuación de un director (con 2 decimales).
