@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
-    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 <h1>Sprint 3 IT ACADEMY</h1>
 
 
-<section class="ejercicio" id="ejercicio1">
+<section class="ejercicio">
     <h2>Ejercicio 1</h2>
     <p>
         S'ha de mostrar per pantalla a l'usuari/ària només els directors de les pel·lícules. Per obtenir l'array de directors/es, has de crear la funció getAllDirectors(). No has de fer el renderitzat del resultat en aquesta funció, ha de retornar l'array de directors. L'objectiu és mantenir cada funció amb una única responsabilitat.
@@ -27,7 +27,7 @@
     }
     </code></pre>
 </section>
-<section class="ejercicio" id="ejercicio2">
+<section class="ejercicio">
     <h2>Ejercicio 2</h2>
     <p>
         Una altra funcionalitat necessària és mostrar les pel·lícules per a un determinat director/a. Per a això, hauràs de crear una funció getMoviesFromDirector(). Aquesta funció ha de rebre com a paràmetre el/la director/a per al qual es volen buscar les seves pel·lícules, i retorna l'array de pel·lícules que ha dirigit.
@@ -38,7 +38,7 @@
     }
     </code></pre>
 </section>
-<section class="ejercicio" id="ejercicio3">
+<section class="ejercicio">
     <h2>Ejercicio 3</h2>
     <p>
         Genial!, ja tens l'array de pel·lícules per a un/a determinat/da director/a. Per a tenir més informació d'aquest/a director/a, es demana calcular la mitjana de les puntuacions de les seves pel·lícules. Per a això, hauràs d'implementar la funció moviesAverageOfDirector(), la qual rep un array de pel·lícules i retorna la nota mitjana, amb dos decimals.
@@ -54,7 +54,7 @@
     }
     </code></pre>
 </section>
-<section class="ejercicio" id="ejercicio4">
+<section class="ejercicio">
     <h2>Ejercicio 4</h2>
     <p>
         ENHORABONA!, ja tens creats tots els filtres que permetran extreure tota la informació necessària sobre els/les directors/es! Ara en aquest exercici i el següent implementaràs la lògica per a ordenar les pel·lícules, part fonamental en qualsevol eina de visualització de dades. En aquest apartat, hauràs de crear una funció, que rebent un array de pel·lícules, el retorni ordenat alfabèticament per títol. Només s'han de retornar les 20 primeres pel·lícules ordenades.
@@ -70,7 +70,7 @@
     }
     </code></pre>
 </section>
-<section class="ejercicio" id="ejercicio5">
+<section class="ejercicio">
     <h2>Ejercicio 5</h2>
     <p>
         Ja només et falta una segona funció que ordeni les pel·lícules. En aquesta ocasió, hauràs d'implementar una funció que rebent un array de pel·lícules, retorna un array de pel·lícules ordenades per any. Com podràs observar, hi ha moltes pel·lícules que coincideixen en un mateix any. Per a ordenar aquestes pel·lícules que tenen el mateix any, s'ha de fer per ordre alfabètic del títol.
@@ -81,7 +81,7 @@
     }
     </code></pre>
 </section>
-<section class="ejercicio" id="ejercicio6">
+<section class="ejercicio">
     <h2>Ejercicio 6</h2>
     <p>
         Ho estàs fent molt bé, ja has creat una aplicació web amb moltes eines que podran ajudar als usuaris/àries! En aquest apartat, és necessari donar la possibilitat als usuaris/àries de demanar la nota mitjana de les pel·lícules d'un determinat gènere. El primer pas serà crear el test unitari per testejar aquesta funcionalitat. Recorda que els tests unitaris s’hauran d’afegir a l’arxiu “tests/films.spec.js”. Després hauràs de crear la funció que rebi una categoria de pel·lícula, i calculi la mitjana de nota d'aquesta categoria (sobre l'array de totes les pel·lícules).
@@ -97,7 +97,7 @@
     }
     </code></pre>
 </section>
-<section class="ejercicio" id="ejercicio7">
+<section class="ejercicio">
     <h2>Ejercicio 7</h2>
     <p>
         Com hauràs pogut observar, la durada de les pel·lícules de l'array ve en hores i minuts. Això és un problema per a comparar-les fàcilment, per la qual cosa hauràs de modificar aquest format de durada. Has de crear una funció on rebent un array de pel·lícules, retorna un array amb aquestes pel·lícules però amb la durada en minuts!
@@ -123,7 +123,7 @@
     }
     </code></pre>
 </section>
-<section class="ejercicio" id="ejercicio8">
+<section class="ejercicio">
     <h2>Ejercicio 8</h2>
     <p>
         Ja estàs arribant al final, només fa falta implementar una última funcionalitat! Els usuaris/àries necessiten saber quina pel·lícula és la millor de cada any. Per dur a terme aquesta funcionalitat, hauràs de crear una funció que accepti l'any, i retorni la millor pel·lícula d'aquest any.
@@ -137,8 +137,17 @@
     }
     </code></pre>
 </section>
+<hr>
+Resultado:
+<div id="resultDiv">
+</div>
+<hr>
+<div class="navigation">
+    <button onclick="previousExercise()" id="btn_anterior">Anterior</button>
+    <button onclick="nextExercise()" id="btn_siguiente">Siguiente</button>
+</div>
 
-
+<script src="helpers.js"></script>
 <script src="data.js"></script>
 <script src="films.js"></script>
 </body>

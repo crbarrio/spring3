@@ -1,0 +1,31 @@
+body {
+    padding: 3rem;
+    font-size: large;
+    margin: auto;
+}
+
+
+#resultDiv {
+    flex: 1;
+    padding: 1rem;
+    min-height: 10rem;
+    font-style: italic;
+}
+
+.ejercicio {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    display: none;
+} 
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem;
+}
+
+button {
+    padding: 0.4rem;
+    
+}
