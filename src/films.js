@@ -1,17 +1,13 @@
 
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
-  let result =  array.map( movie => movie.director );
-
-  return result;
+  return array.map( movie => movie.director );
 }
 
 
 // Exercise 2: Get the films of a certain director
 function getMoviesFromDirector(array, director) {
-  let result = array.filter( movie => movie.director === director)
-
-  return result;
+  return array.filter( movie => movie.director === director)
 }
 
 
@@ -22,9 +18,7 @@ function moviesAverageOfDirector(array, director) {
     return total + movie.score
   },0);
 
-  let avg = parseFloat((suma / movies.length).toFixed(2));
-
-  return avg;
+  return parseFloat((suma / movies.length).toFixed(2));
 }
 
 
@@ -35,16 +29,13 @@ function orderAlphabetically(array) {
   array.toSorted((a,b) => (a.title.localeCompare(b.title))).forEach(movie => {
     result.push (movie.title)
   });
-  result = result.slice(0,20)
 
-  return result;
+  return result.slice(0,20)
 }
 
 // Exercise 5: Order by year, ascending
 function orderByYear(array) {
-
   return array.toSorted((a, b) => (a.year - b.year || a.title.localeCompare(b.title)))
-
 }
 
 
@@ -54,6 +45,7 @@ function moviesAverageByCategory(array, category) {
   let suma = movies.reduce((total, movie) => {
     return total + movie.score
   }, 0)
+  
   return parseFloat((suma / movies.length).toFixed(2))
 }
 
