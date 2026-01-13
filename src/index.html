@@ -23,9 +23,11 @@
     </p>
     <pre><code class="language-javascript">
     function getAllDirectors(array) {
-        return  array.map( movie => movie.director );
+        let directors = array.map( movie => movie.director );
+        return [...new Set(directors)]
     }
     </code></pre>
+    <button></button>
 </section>
 <section class="ejercicio">
     <h2>Ejercicio 2</h2>

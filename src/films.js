@@ -1,7 +1,8 @@
 
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
-  return array.map( movie => movie.director );
+  let directors = array.map( movie => movie.director );
+  return [...new Set(directors)]
 }
 
 
@@ -45,7 +46,7 @@ function moviesAverageByCategory(array, category) {
   let suma = movies.reduce((total, movie) => {
     return total + movie.score
   }, 0)
-  
+
   return parseFloat((suma / movies.length).toFixed(2))
 }
 
