@@ -23,15 +23,9 @@ function moviesAverageOfDirector(array, director) {
 }
 
 
-
 // Exercise 4:  Alphabetic order by title 
 function orderAlphabetically(array) {
-  let result = []
-  array.toSorted((a,b) => (a.title.localeCompare(b.title))).forEach(movie => {
-    result.push (movie.title)
-  });
-
-  return result.slice(0,20)
+  return array.map(movie => movie.title).toSorted((a,b) => (a.localeCompare(b))).slice(0,20)
 }
 
 // Exercise 5: Order by year, ascending
@@ -62,7 +56,7 @@ function hoursToMinutes(array) {
     let hora = finHora != -1 ? parseInt(movie.duration.slice(0, finHora)) * 60 : 0
     let min = finMin != -1 ?  parseInt(movie.duration.slice(inicioMin, finMin)) : 0
     let duracion = hora + min
-    let newMovie ={...movie}
+    let newMovie = {...movie}
     newMovie.duration = duracion
     result.push(newMovie)
     
@@ -71,14 +65,13 @@ function hoursToMinutes(array) {
   return result
 }
 
+
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear(array, year) {
-  let result = []
   let movies = array.filter(movie => movie.year == year)
   let maxScore = movies.toSorted((a, b) => (b.score - a.score))[0].score
   return movies.filter(movie => movie.score == maxScore)
 }
-
 
 
 // The following is required to make unit tests work.
